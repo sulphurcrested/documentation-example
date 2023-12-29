@@ -16,12 +16,15 @@ jobs:
           pip install sphinx sphinx_rtd_theme myst_parser sphinx-autodoc2
       - name: Sphinx build
         run: |
-          cd doc; sphinx-build -v . _build
+          pwd; sphinx-build -v doc _build
+      - name: Check what's built
+        run: |
+          ls -laR
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         with:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: doc/_build/
+          publish_dir: _build/
           force_orphan: true
