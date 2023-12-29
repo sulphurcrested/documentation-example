@@ -33,7 +33,7 @@ source_suffix = {
 
 autodoc2_render_plugin = "myst"
 autodoc2_packages = [
-    'src'
+    '../src'
 ]
 
 # -- Options for HTML output -------------------------------------------------
