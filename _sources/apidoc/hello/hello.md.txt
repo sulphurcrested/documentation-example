@@ -1,0 +1,31 @@
+# {py:mod}`hello`
+
+```{py:module} hello
+```
+
+```{autodoc2-docstring} hello
+:allowtitles:
+```
+
+## Module Contents
+
+### Functions
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`hello <hello.hello>`
+  - ```{autodoc2-docstring} hello.hello
+    :summary:
+    ```
+````
+
+### API
+
+````{py:function} hello(name: str) -> bool
+:canonical: hello.hello
+
+```{autodoc2-docstring} hello.hello
+```
+````
