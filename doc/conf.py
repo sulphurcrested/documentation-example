@@ -28,7 +28,10 @@ source_suffix = {
 
 autodoc2_render_plugin = "myst"
 autodoc2_packages = [
-    '../src/hello'
+    {
+        "path": "../src/hello.py",
+        "module": "hello",
+    }
 ]
 autodoc2_output_dir = 'apidoc'
 
