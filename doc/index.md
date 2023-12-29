@@ -11,14 +11,16 @@
 
    some-feature.md
    another-feature.md
+   apidocs/index
 ```
 
-# using doc2 object
-```{autodoc2-object}
+# using eval rst object
+```{eval-rst}
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    some-feature.md
    another-feature.md
+   apidocs/index
 ```
