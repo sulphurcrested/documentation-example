@@ -16,7 +16,7 @@ jobs:
           pip install sphinx sphinx_rtd_theme myst_parser sphinx-autodoc2 sphinxcontrib-napoleon
       - name: Sphinx clean
         run: |
-          doc/make clean
+          cd doc; make clean;
       - name: Sphinx build
         run: |
           # sphinx-build doc _build
