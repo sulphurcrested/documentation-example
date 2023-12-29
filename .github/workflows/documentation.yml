@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install sphinx sphinx_rtd_theme myst_parser sphinx-autodoc2
-      - name: Sphinx build
+      - name: Sphinx -v build
         run: |
           cd doc; sphinx-build . _build
       - name: Deploy to GitHub Pages
