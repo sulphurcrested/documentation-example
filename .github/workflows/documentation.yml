@@ -14,9 +14,9 @@ jobs:
       - name: Install dependencies
         run: |
           pip install sphinx sphinx_rtd_theme myst_parser sphinx-autodoc2
-      - name: Sphinx -v build
+      - name: Sphinx build
         run: |
-          cd doc; sphinx-build . _build
+          cd doc; sphinx-build -v . _build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
