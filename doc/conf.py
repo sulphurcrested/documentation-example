@@ -19,6 +19,13 @@ extensions = ['myst_parser', 'autodoc2', 'sphinx.ext.napoleon']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
+
 autodoc2_render_plugin = "myst"
 autodoc2_packages = [
     'src'
