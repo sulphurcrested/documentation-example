@@ -3,11 +3,6 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# trick to include the project directory to the path
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../'))
-
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -33,8 +28,9 @@ source_suffix = {
 
 autodoc2_render_plugin = "myst"
 autodoc2_packages = [
-    '../src'
+    'src'
 ]
+autodoc2_output_dir = 'apidocs'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
