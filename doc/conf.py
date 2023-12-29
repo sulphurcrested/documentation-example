@@ -28,9 +28,9 @@ source_suffix = {
 
 autodoc2_render_plugin = "myst"
 autodoc2_packages = [
-    'src'
+    '../src'
 ]
-autodoc2_output_dir = 'apidocs'
+autodoc2_output_dir = 'apidoc'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
