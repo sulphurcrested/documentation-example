@@ -21,7 +21,7 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 autodoc2_render_plugin = "myst"
 autodoc2_packages = [
-    '../src'
+    'src'
 ]
 
 # -- Options for HTML output -------------------------------------------------
